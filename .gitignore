@@ -7,3 +7,5 @@
 *.njsproj
 *.sln
 *.local
+vendor
+test.php
