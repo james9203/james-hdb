@@ -9,3 +9,4 @@
 *.local
 /vendor/
 test.php
+composer.lock
