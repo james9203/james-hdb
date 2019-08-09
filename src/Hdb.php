@@ -62,7 +62,7 @@ class  Hdb
             if ($this->stmt === false) {
                 throw  new \Exception($this->hdberror());
             }
-            $arr = [];
+            $arr = array();
             while ($row = hdb_fetch_array($this->stmt, 2)) {
                 $arr[] = $row;
             }
@@ -90,7 +90,7 @@ class  Hdb
             if (!empty($row)) {
                 return $row;
             }
-            return [];
+            return array();
         } catch (\Exception $e) {
             echo $e->getMessage();
         }
